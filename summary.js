@@ -43,7 +43,7 @@ function mileToKm(mile) {
     const km = 1.60934 * mile;
     const result = km.toFixed(3) + " Kilometers ";
     return result;
-    
+
 }
 
 const distance = mileToKm(10);
@@ -51,4 +51,78 @@ console.log(distance)
 
 
 
-// console.log("✅ _inch_to_feet | _miles_to_km")
+console.log("✅ _Find__Out__Leap__Year")
+
+// year will be leap year if the year is divisible by 4
+// not true 100%
+function isLeapYear(year) {
+    if (year % 4 === 0) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+const year = isLeapYear(2000);
+console.log(year)
+
+
+/*
+1. those year that is not divisible by 100, if the year is divisible by 4:
+then it will be a leap year
+*/
+
+function isLeapYear_2(year_2) {
+    if (year_2 % 100 !== 0 && year_2 % 4 === 0) {
+        return true;
+    }
+    else if (year_2 % 100 === 0 && year_2 % 400 === 0) {
+        return true;
+    }
+    else {
+        return false;
+    }
+
+}
+
+const year_2 = isLeapYear_2(2026)
+console.log("Is leap year(2) -", year_2);
+
+
+
+
+console.log("✅ Average__Odd__Array");
+
+/**
+ function takes an array as parameter
+ give me the average of the odd numbers
+
+ */ /*
+
+*/
+
+
+function oddAverage(numbers) {
+    let odds = [];
+    for (number of numbers) {
+        if (number % 2 === 1) {
+            odds.push(number)
+        }
+    }
+    console.log(odds)
+
+    let sum = 0;
+    for (number of odds) {
+        sum = sum + number;
+    }
+
+    const count = odds.length;
+    const average = (sum / count).toFixed(2);
+    return average;
+
+}
+
+const numbers = [10, 11, 13, 15, 16, 17, 18, 19, 20];
+const avg = oddAverage(numbers);
+console.log("Average of the odd numbers is :", avg)

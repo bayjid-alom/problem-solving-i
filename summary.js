@@ -14,7 +14,7 @@
 
  */
 
-console.log("✅ _inch_to_feet | _miles_to_km")
+console.log("✅ inch_______to_feet | miles________to_km")
 
 // 12 inch = 1 feet
 function inchToFeet(inch) {
@@ -51,7 +51,7 @@ console.log(distance)
 
 
 
-console.log("✅ _Find__Out__Leap__Year")
+console.log("✅ Find______Out____Leap_____Year")
 
 // year will be leap year if the year is divisible by 4
 // not true 100%
@@ -92,7 +92,7 @@ console.log("Is leap year(2) -", year_2);
 
 
 
-console.log("✅ Average__Odd__Array");
+console.log("✅ Average_________Odd_______Array");
 
 /**
  function takes an array as parameter
@@ -129,7 +129,7 @@ console.log("Average of the odd numbers is :", avg)
 
 
 
-console.log("✅ remove___duplicate____item");
+console.log("✅ remove________duplicate____item");
 /**
  array has some duplicate elements
  check : has not includes.
@@ -174,7 +174,7 @@ console.log("Removed duplicate :", uniqueArray_2)
 
 
 
-console.log("✅ Math____abs_round_ceil_floor_random number");
+console.log("✅ Math_________|abs_round_ceil_floor_random number");
 
 // Already Made ✅ (Learn later...) [Props]
 // const Math = {
@@ -213,3 +213,39 @@ Math.floor() → দশমিক অংশ বাদ দেয়, ফলে 0 থ�
 1–10 → Math.floor(Math.random() * 10) + 1
 0–10 → Math.floor(Math.random() * 11)
 */
+
+
+
+// Date________and__________Time (check: date_time.js)
+console.log("✅ Swap varibale________Swap Without temp, destructing");
+// একটা অতিরিক্ত পাত্র হিসেবে temporary (varible) ব্যবহার করবো ;
+
+let a = 25;
+let b = 50;
+console.log(a, b)   // 25 50
+a = b;
+b = a;
+console.log(a, b)   // 50 50
+
+
+// প্রথমে temporary তে x-এর মান স্টোর করে রেখেছি,
+// x-এর মান হিসেবে y-কে সেট করেছি,
+// এরপর পুনরায় y-এর জায়গায় temp তথা x-এর মান রেখেছি।
+let x = 100;
+let y = 200;
+console.log(x, y)   // 100 200
+
+const temp = x;
+x = y;
+y = temp;
+console.log(x, y);  // 200 100
+
+
+
+// Destructuring
+let m = 300;
+let n = 600;
+// console.log(m, n)    // Error!
+
+[m, n] = [n, m]
+console.log(m, n)   // 600 300

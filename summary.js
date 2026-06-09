@@ -136,6 +136,7 @@ console.log("✅ remove___duplicate____item");
 
  নোট ঃ চেক করতে হবে এখানে আইটেম নেই - যদি না থাকে তাহলে খালি এরেতে পুশ করতে হবে।
   if (unique.includes(item) === false)
+  if (!unique.includes(item))  // readable
  */
 
 
@@ -169,6 +170,49 @@ function noDuplicateNumber(array) {
 const number_repeated = [10, 20, 10, 10, 15, 10, 10, 25, 30];
 const uniqueArray_2 = noDuplicateNumber(number_repeated)
 console.log("Removed duplicate :", uniqueArray_2)
+
+
+
+
+console.log("✅ Math____abs_round_ceil_floor_random number");
+
+// Already Made ✅ (Learn later...) [Props]
+// const Math = {
+//     min: function min(num1 , num2){
+//         return num2;
+//     }
+// }
+// console.log(Math.min)
+
+
+const min = Math.min(10, 20, 25);
+const max = Math.max(100, 1000, 10000);
+console.log(max, min)              // 10000 10
+
+console.log(Math.max(9, 99, 999))  // O/P: 999
+console.log(Math.abs(-100 + 10))   // remove sign
+
+console.log(Math.floor(18.75))     // নিচে নামায় - floor O/P: 18
+console.log(Math.ceil(99.35))      // উপরে উঠায় - ceil O/P: 100
+
+console.log(Math.random())         // between 0-1
+console.log(Math.random() * 10)      // Value*10
+
+const random_number = Math.round(Math.random() * 20);   // 0-19
+console.log(random_number)
+
+
+/**
+ কীভাবে কাজ করে?
+Math.random() → 0 থেকে 1 এর মধ্যে সংখ্যা দেয়
+* 10 → 0 থেকে 10 এর মধ্যে নিয়ে যায়
+Math.floor() → দশমিক অংশ বাদ দেয়, ফলে 0 থেকে 9 পাওয়া যায়
++ 1 → 1 থেকে 10 হয়ে যায়
+
+0–9 → Math.floor(Math.random() * 10)
+1–10 → Math.floor(Math.random() * 10) + 1
+0–10 → Math.floor(Math.random() * 11)
+ */
 
 
 

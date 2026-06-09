@@ -99,7 +99,7 @@ console.log("✅ Average__Odd__Array");
  give me the average of the odd numbers
 
  */ /*
-
+ 
 */
 
 
@@ -126,3 +126,50 @@ function oddAverage(numbers) {
 const numbers = [10, 11, 13, 15, 16, 17, 18, 19, 20];
 const avg = oddAverage(numbers);
 console.log("Average of the odd numbers is :", avg)
+
+
+
+console.log("✅ remove___duplicate____item");
+/**
+ array has some duplicate elements
+ check : has not includes.
+
+ নোট ঃ চেক করতে হবে এখানে আইটেম নেই - যদি না থাকে তাহলে খালি এরেতে পুশ করতে হবে।
+  if (unique.includes(item) === false)
+ */
+
+
+function noDuplicate(array) {
+
+    let unique = [];
+    for (item of array) {
+        if (unique.includes(item) === false) {
+            unique.push(item)
+        }
+    }
+    return unique;
+}
+
+const biriyaniLover = ["Hasan", "Anik", "Hridoy", "Hasan", "Anik", "Hasan"];
+const uniqueArray = noDuplicate(biriyaniLover);
+console.log("Removed Duplicate :", uniqueArray)
+
+
+function noDuplicateNumber(array) {
+
+    let unique_numbers = [];
+    for (item of array) {
+        if (unique_numbers.includes(item) === false) {
+            unique_numbers.push(item);
+        }
+    }
+    return unique_numbers;
+}
+
+const number_repeated = [10, 20, 10, 10, 15, 10, 10, 25, 30];
+const uniqueArray_2 = noDuplicateNumber(number_repeated)
+console.log("Removed duplicate :", uniqueArray_2)
+
+
+
+
